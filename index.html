@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Guess the Word</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <title>Guess the Word</title>
-</head>
+  <body>
+    <header>
+      <h1>Guess the Word</h1>
+    </header>
 
-<body>
-  <h1>Guess the Word</h1>
-  <button id="start-button">Start Game</button>
-  <section id="game-zone">
-    <p>Wins <span id="wins"></span></p>
-    <p>Losses: <span id="losses"></span></p>
-    <p>Timer is: <span id="timer"></span></p>
-    <p>
-    <ul id="word-to-guess"></ul>
-    </p>
+    <section id="instructions">
+      <h2>Instructions:</h2>
+      <ol>
+        <li>Press Start Game.</li>
+        <li>Type a letter on your keyboard.</li>
+        <li>If that letter is present in the word, it will be revealed.</li>
+      </ol>
+      <p>
+        If you reveal all of the letters before 15 seconds have elapsed, you
+        win! Otherwise, you lose.
+      </p>
+      <p>Good luck!</p>
+    </section>
 
-  </section>
-  <script src="assets/js/script.js"></script>
-</body>
-
+    <section id="score-zone">
+      <p>Wins: <span id="wins"></span></p>
+      <p>Losses: <span id="losses"></span></p>
+      <button id="clear-score">Clear Score</button>
+    </section>
+    <button id="start-button">Start Game</button>
+    <section id="game-zone">
+      <p id="timer"></p>
+      <ul id="word-to-guess"></ul>
+    </section>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

@@ -1,0 +1,83 @@
+body {
+  max-width: 1080px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-size: 20px;
+  background: lightgrey;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header {
+  background: white;
+  text-align: center;
+}
+
+#instructions {
+  background: ivory;
+  padding: 20px 80px;
+  max-width: 1080px;
+}
+
+#score-zone {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+#score-zone p,
+#clear-score {
+  padding: 20px;
+  margin: 10px;
+  font-weight: 900;
+  color: white;
+}
+
+#score-zone > p:nth-child(1) {
+  background: green;
+}
+#score-zone > p:nth-child(2) {
+  background: rgb(172, 0, 0);
+}
+
+#clear-score {
+  border: none;
+  cursor: pointer;
+  background: yellow;
+  color: black;
+  font-size: 20px;
+}
+
+#start-button {
+  border: none;
+  font-size: 40px;
+  padding: 20px;
+}
+
+#start-button:hover {
+  background: yellow;
+  cursor: pointer;
+}
+
+#game-zone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#timer,
+#word-to-guess {
+  padding: 40px;
+}
+
+#game-zone ul {
+  display: inline;
+}
+
+#game-zone ul li {
+  display: inline;
+  font-size: 40px;
+  padding: 10px;
+}
